@@ -1,0 +1,15 @@
+{
+  "name": "splitpal-common",
+  "version": "1.0.0",
+  "cordova": {
+    "id": "splitpal-common",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "description": "Splitpal common",
+  "keywords": [
+  ],
+  "author": "SplitPal",
+  "license": "None"
+}

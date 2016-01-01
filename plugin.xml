@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="splitpal-common"
+        version="1.0.0">
+
+  <name>Splitpal</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/splitpal-common.js" target="js/splitpal-common.js"/>
+
+  <js-module src="www/splitpal-common.js" name="Splitpal">
+    <clobbers target="Splitpal" />
+  </js-module>
+
+  <platform name="ios">
+    
+    <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
+    <array>
+      <string>fbauth</string>
+    </array>
+    </config-file>
+    
+    <!-- <config-file target="config.xml" parent="/widget">
+      <feature name="Hello">
+        <param name="ios-package" value="HWPHello" />
+      </feature>
+    </config-file> -->
+
+    <!-- <header-file src="src/ios/HWPHello.h" target-dir="HelloPlugin"/> -->
+    <!-- <source-file src="src/ios/HWPHello.m" target-dir="HelloPlugin"/> -->
+  </platform>
+
+</plugin>
